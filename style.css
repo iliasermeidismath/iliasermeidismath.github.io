@@ -1,3 +1,4 @@
+
 /* ========================================
    GENERAL
 ======================================== */
@@ -15,8 +16,8 @@ html {
 body {
     font-family: Georgia, "Times New Roman", serif;
 
-    color: #222222;
-    background-color: #F8F7F3;
+    color: #e6e6e6;
+    background-color: #151515;
 
     line-height: 1.7;
 
@@ -31,7 +32,7 @@ body {
 ======================================== */
 
 .header {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #333333;
 
     transition: border-color 0.3s ease;
 }
@@ -51,7 +52,7 @@ body {
 /* Name */
 
 .logo {
-    color: #222222;
+    color: #f2f2f2;
 
     font-size: 21px;
     font-weight: bold;
@@ -79,7 +80,7 @@ body {
 
     background: transparent;
 
-    color: #555555;
+    color: #dddddd;
 
     font-size: 20px;
     line-height: 1;
@@ -94,7 +95,7 @@ body {
 }
 
 .dark-mode-toggle:hover {
-    color: #000000;
+    color: #ffffff;
 
     transform: scale(1.1);
 }
@@ -124,7 +125,7 @@ body {
 }
 
 .hero h1 {
-    color: #222222;
+    color: #f2f2f2;
 
     font-size: 38px;
     font-weight: normal;
@@ -141,7 +142,7 @@ body {
 
     font-size: 15px;
 
-    color: #666666;
+    color: #aaaaaa;
 
     margin-bottom: 28px;
 
@@ -194,13 +195,13 @@ body {
 
     padding: 65px 30px;
 
-    border-top: 1px solid #dddddd;
+    border-top: 1px solid #333333;
 
     transition: border-color 0.3s ease;
 }
 
 .section h2 {
-    color: #222222;
+    color: #f2f2f2;
 
     font-size: 30px;
     font-weight: normal;
@@ -230,11 +231,11 @@ body {
 }
 
 .cv-text a {
-    color: #555555;
+    color: #cccccc;
 
     text-decoration: none;
 
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #666666;
 
     transition:
         color 0.3s ease,
@@ -242,9 +243,9 @@ body {
 }
 
 .cv-text a:hover {
-    color: #000000;
+    color: #ffffff;
 
-    border-bottom-color: #000000;
+    border-bottom-color: #ffffff;
 }
 
 
@@ -261,7 +262,7 @@ body {
 }
 
 .publication-subsection h3 {
-    color: #222222;
+    color: #eeeeee;
 
     font-size: 21px;
 
@@ -287,7 +288,7 @@ body {
 }
 
 .publication-details {
-    color: #666666;
+    color: #aaaaaa;
 
     font-size: 15px;
 
@@ -295,7 +296,7 @@ body {
 }
 
 .publication-link a {
-    color: #555555;
+    color: #bbbbbb;
 
     text-decoration: none;
 
@@ -307,7 +308,7 @@ body {
 }
 
 .publication-link a:hover {
-    color: #000000;
+    color: #ffffff;
 
     text-decoration: underline;
 }
@@ -338,7 +339,7 @@ body {
 }
 
 .contact span {
-    color: #555555;
+    color: #aaaaaa;
 }
 
 
@@ -353,7 +354,7 @@ body {
 
     padding: 25px 30px 45px;
 
-    color: #888888;
+    color: #777777;
 
     font-family: Arial, Helvetica, sans-serif;
 
@@ -366,85 +367,85 @@ body {
 
 
 /* ========================================
-   DARK MODE
+   LIGHT MODE
 ======================================== */
 
-body.dark-mode {
-    color: #e6e6e6;
+body.light-mode {
+    color: #222222;
 
-    background-color: #151515;
+    background-color: #F8F7F3;
 }
 
-body.dark-mode .header {
-    border-bottom-color: #333333;
+body.light-mode .header {
+    border-bottom-color: #dddddd;
 }
 
-body.dark-mode .logo {
-    color: #f2f2f2;
+body.light-mode .logo {
+    color: #222222;
 }
 
-body.dark-mode .dark-mode-toggle {
-    color: #dddddd;
+body.light-mode .dark-mode-toggle {
+    color: #555555;
 }
 
-body.dark-mode .dark-mode-toggle:hover {
-    color: #ffffff;
+body.light-mode .dark-mode-toggle:hover {
+    color: #000000;
 }
 
-body.dark-mode .hero h1 {
-    color: #f2f2f2;
+body.light-mode .hero h1 {
+    color: #222222;
 }
 
-body.dark-mode .position {
-    color: #aaaaaa;
+body.light-mode .position {
+    color: #666666;
 }
 
-body.dark-mode .section {
-    border-top-color: #333333;
+body.light-mode .section {
+    border-top-color: #dddddd;
 }
 
-body.dark-mode .section h2 {
-    color: #f2f2f2;
+body.light-mode .section h2 {
+    color: #222222;
 }
 
-body.dark-mode .publication-subsection h3 {
-    color: #eeeeee;
+body.light-mode .publication-subsection h3 {
+    color: #222222;
 }
 
-body.dark-mode .cv-text a {
-    color: #cccccc;
+body.light-mode .cv-text a {
+    color: #555555;
 
-    border-bottom-color: #666666;
+    border-bottom-color: #cccccc;
 }
 
-body.dark-mode .cv-text a:hover {
-    color: #ffffff;
+body.light-mode .cv-text a:hover {
+    color: #000000;
 
-    border-bottom-color: #ffffff;
+    border-bottom-color: #000000;
 }
 
-body.dark-mode .publication-details {
-    color: #aaaaaa;
+body.light-mode .publication-details {
+    color: #666666;
 }
 
-body.dark-mode .publication-link a {
-    color: #bbbbbb;
+body.light-mode .publication-link a {
+    color: #555555;
 }
 
-body.dark-mode .publication-link a:hover {
-    color: #ffffff;
+body.light-mode .publication-link a:hover {
+    color: #000000;
 }
 
-body.dark-mode .contact {
+body.light-mode .contact {
     color: #777777;
 }
 
-body.dark-mode .contact span {
-    color: #aaaaaa;
+body.light-mode .contact span {
+    color: #555555;
 }
 
-body.dark-mode .footer {
-    color: #777777;
+body.light-mode .footer {
+    color: #888888;
 }
 
 
