@@ -1,16 +1,44 @@
-const button = document.getElementById("dark-mode-toggle");
 
-button.addEventListener("click", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-    document.body.classList.toggle("dark-mode");
+    const toggleButton = document.getElementById("dark-mode-toggle");
 
-    if (document.body.classList.contains("dark-mode")) {
+    // Always start in dark mode
+    document.body.classList.remove("light-mode");
 
-        button.textContent = "☀";
+    updateButton();
 
-    } else {
+    // Switch between dark and light mode
+    toggleButton.addEventListener("click", function () {
 
-        button.textContent = "☾";
+        document.body.classList.toggle("light-mode");
+
+        updateButton();
+
+    });
+
+    // Update the button icon and accessibility label
+    function updateButton() {
+
+        if (document.body.classList.contains("light-mode")) {
+
+            toggleButton.textContent = "☾";
+
+            toggleButton.setAttribute(
+                "aria-label",
+                "Switch to dark mode"
+            );
+
+        } else {
+
+            toggleButton.textContent = "☀";
+
+            toggleButton.setAttribute(
+                "aria-label",
+                "Switch to light mode"
+            );
+
+        }
 
     }
 
