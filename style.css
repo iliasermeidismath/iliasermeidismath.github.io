@@ -215,6 +215,9 @@ body {
 /* ========================================
    SHORT CV
 ======================================== */
+.cv-download {
+    margin-top: 40px;
+}
 
 .cv-section {
     text-align: left;
